@@ -1,0 +1,236 @@
+.main_box {
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+  padding: 10px;
+  max-width: 50%;
+  margin: 50px;
+  height: 50vh;
+}
+.border {
+  height: 100%;
+  border-top: 1px solid #7a7a7a;
+  border-right: 1px solid #7a7a7a;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+}
+.test {
+  display: flex;
+  gap: 10px;
+  /* width: 100%; */
+  /* height: 95%; */
+  /* flex-shrink: 0; */
+  /* overflow-x: scroll; */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.test::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: rgb(185, 185, 185);
+}
+.test::-webkit-scrollbar {
+  width: 10px;
+}
+.test::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #386bb8;
+}
+
+.card-bg {
+  padding: 15px 10px;
+  margin-top: 20px;
+  width: 40%;
+  /* overflow-y: scroll; */
+  overflow-y: auto;
+  height: 80%;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: #ebebeb;
+}
+.card-bg::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: rgb(185, 185, 185);
+}
+.card-bg::-webkit-scrollbar {
+  width: 10px;
+}
+.card-bg::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #386bb8;
+}
+.card {
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #575656;
+}
+.incomplete_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.incomplete_badge {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(216, 9, 9);
+  border-top-left-radius: 60%;
+  border-bottom-left-radius: 60%;
+}
+.card_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.incomplete_count span {
+  background: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.profile_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile .profile_img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile_name {
+  font-size: 12px;
+  font-weight: 700;
+}
+.total_client {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.total_client .clients {
+  display: flex;
+}
+.client_count {
+  width: 20px;
+  height: 20px;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.notes {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.card_margin {
+  margin-bottom: 12px;
+}
+.client_message,
+.client_attachment,
+.date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.attachment-icon {
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+  border-bottom: 1px solid rgb(228, 226, 226);
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+.upload-form {
+  padding: 10px;
+  position: relative;
+}
+.preview-file {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.modal-container {
+  position: relative;
+}
+.multiple-preview-container {
+  padding-left: 30px;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 340px;
+  width: 550px;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  z-index: 99;
+}
+
+.show-multiple {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.show-multiple img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-button {
+  padding: 8px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
